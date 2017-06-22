@@ -1,0 +1,45 @@
+<ion-header>
+	<ion-navbar>
+    	<ion-title>
+    		Calculadora  AV2 LTP 3
+    	</ion-title>
+	</ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+    <ion-list>
+	    <ion-item>
+	        <ion-input type="number" placeholder="Digite o primeiro numero" [(ngModel)]="firstNumber"></ion-input>
+	    </ion-item>
+	    <ion-item>
+	        <ion-input type="number" id="a" placeholder="Digite o segundo numero" [(ngModel)]="secondNumber"></ion-input>
+	    </ion-item>
+	</ion-list>
+
+	<button ion-button outline (click)="somar()">+</button>
+	<button ion-button outline (click)="subtrair()">-</button>
+	<button ion-button outline (click)="multiplicar()">*</button>
+	<button ion-button outline (click)="dividir()">/</button>
+	<button ion-button outline (click)="seno()">SEN</button>
+	<button ion-button outline (click)="cosseno()">COS</button>
+	<button ion-button outline (click)="pi()">PI</button>
+	<button ion-button outline (click)="clear()">LIMPAR</button>
+	<button ion-button outline (click)="salvarTotal()">SALVAR TOTAL</button>
+	<button ion-button outline (click)="trocaSinal()">+/-</button>
+
+	<ion-card>
+	    <ion-card-header>
+	    	Resultado: {{total}}
+	    </ion-card-header>
+	    <ion-card-content>
+	        <p>OBS: PARA CALCULAR <b>TANGENTE</b>,<b>SENO</b> E O <b>PI</b> BASTA DIGITAR O PRIMEIRO NUMERO!!!
+	        </p><br>
+	        <p>---> +/-  TROCA O SINAL DO PRIMEIRO NUMERO DIGITADO
+	        </p><br>
+	        <p>Total acumulado: {{totalAcumulado}}
+	        </p><br>
+	    </ion-card-content>
+	</ion-card>
+
+</ion-content>
