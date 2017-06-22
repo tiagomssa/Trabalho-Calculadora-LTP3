@@ -25,7 +25,7 @@ export class HomePage {
 	    let  firstNumber = this.firstNumber ? parseFloat(this.firstNumber) : 0 ;
 	    let  secondNumber = this.secondNumber ? parseFloat(this.secondNumber) : 0;
 	    this.total = (firstNumber - secondNumber) ;
-	    this.historico = firstNumber.toString() + '- ' + secondNumber.toString() + ' = ' + this.total.toString();
+	    this.historico = firstNumber.toString() + ' - ' + secondNumber.toString() + ' = ' + this.total.toString();
 	    console.log("clicked!");
   	}
  	dividir () {
@@ -47,26 +47,26 @@ export class HomePage {
    	raiz () {
 	    let  firstNumber = this.firstNumber ? parseFloat(this.firstNumber) : 0 ;
 	    this.total = Math.sqrt(firstNumber);
-	    this.historico = 'raiz(' + firstNumber.toString() + ')';
+	    this.historico = 'raiz(' + firstNumber.toString() + ')' + ' = ' + this.total.toString();
 	    console.log("clicked!");
   	}
 
    	seno () {
 	    let  firstNumber = this.firstNumber ? parseFloat(this.firstNumber) : 0 ;
 	    this.total = Math.sin(firstNumber);
-	    this.historico = 'sen(' + firstNumber.toString() + ')';
+	    this.historico = 'sen(' + firstNumber.toString() + ')' + ' = ' + this.total.toString();
 	    console.log("clicked!");
   	}
    	cosseno () {
 	    let  firstNumber = this.firstNumber ? parseFloat(this.firstNumber) : 0 ;
 	    this.total = Math.cos(firstNumber);
-	    this.historico = 'cos(' + firstNumber.toString() + ')';
+	    this.historico = 'cos(' + firstNumber.toString() + ')' + ' = ' + this.total.toString();
 	    console.log("clicked!");
   	}
    	pi () {
 	    let  firstNumber = this.firstNumber ? parseFloat(this.firstNumber) : 0 ;
 	    this.total = Math.PI*firstNumber;
-	    this.historico = 'PI * (' + firstNumber.toString() + ')';
+	    this.historico = 'PI * (' + firstNumber.toString() + ')' + ' = ' + this.total.toString();
 	    console.log("clicked!");
   	}
 	salvarTotal() {
@@ -76,7 +76,7 @@ export class HomePage {
   	trocaSinal() {
   		let  firstNumber = this.firstNumber ? parseFloat(this.firstNumber) : 0 ;
   		this.firstNumber = -1 * firstNumber;
-  		this.historico = '-1 * (' + firstNumber.toString() + ')';
+  		this.historico = '-1 * (' + firstNumber.toString() + ')' + ' = ' + this.firstNumber.toString();
   	}
 
   	clear() {
