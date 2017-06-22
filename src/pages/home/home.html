@@ -24,21 +24,24 @@
 	<button ion-button outline (click)="seno()">SEN</button>
 	<button ion-button outline (click)="cosseno()">COS</button>
 	<button ion-button outline (click)="pi()">PI</button>
-	<button ion-button outline (click)="clear()">LIMPAR</button>
+	<button ion-button outline (click)="clear()">AC</button>
 	<button ion-button outline (click)="salvarTotal()">SALVAR TOTAL</button>
 	<button ion-button outline (click)="trocaSinal()">+/-</button>
+	<button ion-button outline (click)="raiz()">SQRT</button>
 
 	<ion-card>
 	    <ion-card-header>
 	    	Resultado: {{total}}
 	    </ion-card-header>
 	    <ion-card-content>
-	        <p>OBS: PARA CALCULAR <b>TANGENTE</b>,<b>SENO</b> E O <b>PI</b> BASTA DIGITAR O PRIMEIRO NUMERO!!!
+	        <p>OBS: PARA CALCULAR <b>RAIZ</b>,<b>TANGENTE</b>,<b>SENO</b> E O <b>PI</b> BASTA DIGITAR O PRIMEIRO NUMERO!!!
 	        </p><br>
 	        <p>---> +/-  TROCA O SINAL DO PRIMEIRO NUMERO DIGITADO
 	        </p><br>
 	        <p>Total acumulado: {{totalAcumulado}}
 	        </p><br>
+	        <p><b>Historico:</b> {{historico}}
+	        </p>
 	    </ion-card-content>
 	</ion-card>
 
